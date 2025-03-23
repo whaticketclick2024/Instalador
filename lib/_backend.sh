@@ -137,7 +137,9 @@ mkdir -p public/company1/quickMessages
 chmod 777 public/company1/quickMessages
 mkdir -p public/company1/profile
 chmod 777 public/company1/profile
-npm install
+
+# Fixando a versão exata do pacote openai
+npm install openai@4.58.2
 EOF
 
   printf "${GREEN}Instalação das dependências concluída com sucesso!\n"
